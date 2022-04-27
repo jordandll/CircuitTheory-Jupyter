@@ -20,6 +20,6 @@ The returned function accepts one argument, the desired percent of the initial c
 denoted as 'X'.  Said function returns the time, in seconds, that it takes to reach
 X% of the initial charge.
 Parameter:
-  C:	Capacitance in farads;;
+  C:	Capacitance in farads;
   R:	Resistance in ohms."""
 	return lambda X: C*R*(2*log(10) - log(X))
